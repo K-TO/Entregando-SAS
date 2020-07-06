@@ -1,0 +1,16 @@
+Z:\Periferia\Entregando\Entregando.Service\bin\Debug\Entregando.Service.dll
+Z:\Periferia\Entregando\Entregando.Service\bin\Debug\Entregando.Service.pdb
+Z:\Periferia\Entregando\Entregando.Service\obj\Debug\Entregando.Service.csproj.CoreCompileInputs.cache
+Z:\Periferia\Entregando\Entregando.Service\obj\Debug\Entregando.Service.dll
+Z:\Periferia\Entregando\Entregando.Service\obj\Debug\Entregando.Service.pdb
+Z:\Periferia\Entregando\Entregando.Service\bin\Debug\Entregando.Data.dll
+Z:\Periferia\Entregando\Entregando.Service\bin\Debug\Entregando.Infraestructure.dll
+Z:\Periferia\Entregando\Entregando.Service\bin\Debug\EntityFramework.dll
+Z:\Periferia\Entregando\Entregando.Service\bin\Debug\Newtonsoft.Json.dll
+Z:\Periferia\Entregando\Entregando.Service\bin\Debug\Entregando.Data.pdb
+Z:\Periferia\Entregando\Entregando.Service\bin\Debug\Entregando.Data.dll.config
+Z:\Periferia\Entregando\Entregando.Service\bin\Debug\Entregando.Infraestructure.pdb
+Z:\Periferia\Entregando\Entregando.Service\bin\Debug\EntityFramework.xml
+Z:\Periferia\Entregando\Entregando.Service\bin\Debug\Newtonsoft.Json.xml
+Z:\Periferia\Entregando\Entregando.Service\obj\Debug\Entregando.Service.csprojAssemblyReference.cache
+Z:\Periferia\Entregando\Entregando.Service\obj\Debug\Entregando.Service.csproj.CopyComplete

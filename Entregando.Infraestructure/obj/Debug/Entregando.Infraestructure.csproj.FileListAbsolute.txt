@@ -1,0 +1,9 @@
+Z:\Periferia\Entregando\Entregando.Infraestructure\bin\Debug\Entregando.Infraestructure.dll
+Z:\Periferia\Entregando\Entregando.Infraestructure\bin\Debug\Entregando.Infraestructure.pdb
+Z:\Periferia\Entregando\Entregando.Infraestructure\obj\Debug\Entregando.Infraestructure.csproj.CoreCompileInputs.cache
+Z:\Periferia\Entregando\Entregando.Infraestructure\obj\Debug\Entregando.Infraestructure.dll
+Z:\Periferia\Entregando\Entregando.Infraestructure\obj\Debug\Entregando.Infraestructure.pdb
+Z:\Periferia\Entregando\Entregando.Infraestructure\bin\Debug\Newtonsoft.Json.dll
+Z:\Periferia\Entregando\Entregando.Infraestructure\bin\Debug\Newtonsoft.Json.xml
+Z:\Periferia\Entregando\Entregando.Infraestructure\obj\Debug\Entregando.Infraestructure.csproj.CopyComplete
+Z:\Periferia\Entregando\Entregando.Infraestructure\obj\Debug\Entregando.Infraestructure.csprojAssemblyReference.cache

@@ -1,0 +1,161 @@
+﻿@model IEnumerable<Entregando.Infraestructure.Domain.Empleado>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Empleados</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-striped table-bordered dt-responsive nowrap" style="width:100%" id="data-table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombres)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Celular)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Documento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TieneHijos)
+            </th>
+            <th>
+                Opciones
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombres)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Apellidos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Celular)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Documento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @if (item.TieneHijos)
+                    {
+                        <p>Si</p>
+                    }
+                    else
+                    {
+                        <p>No</p>
+                    }
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Ver", "Details", new { id = item.Id }) |
+                    <a href="#" onClick="@string.Format("DeleteConfirm({0}, '{1}')", item.Id, item.Nombres)">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "__AjaxAntiForgeryForm" }))
+{
+    @Html.AntiForgeryToken()
+}
+
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json"></script>
+    <script>
+        $(document).ready(() => {
+            $('#data-table').DataTable({
+                responsive: true,
+            });
+        });
+
+        //const axios = require('axios').default;
+
+        //const axios = require('axios');
+        //console.log('Begin')
+        const token = $('input[name="__RequestVerificationToken"]').val();
+        const DeleteEmployee = async (dato) => {
+            var test = axios({
+                method: 'POST',
+                url: '@Url.Action("Delete", "Empleado")',
+                data: {
+                    id: dato,
+                    __RequestVerificationToken: token
+                }
+            });
+            console.log(test)
+
+            @*var _headers = new Headers();
+                _headers.append("Content-Type", "application/json");
+            const token = $('input[name="__RequestVerificationToken"]').val();
+            let options = {
+                headers: _headers,
+                method: 'POST',
+                body: JSON.stringify({ __RequestVerificationToken: token, id: dato }),
+                //credentials: 'same/origin',
+            };
+            console.log('options')
+            console.log(options)
+            const url = '@Url.Action("Delete", "Empleado")';
+            var peticion = await fetch(url, options)
+            var result = peticion.json()
+            console.log(result)*@
+        }
+
+        const AddAntiForgeryToken = function (data) {
+            data.__RequestVerificationToken = $('#__AjaxAntiForgeryForm input[name=__RequestVerificationToken]').val();
+            return data;
+        };
+
+
+        function DeleteConfirm(id, empleado) {
+            Swal.fire({
+                title: `Se eliminara el empleado ${empleado}, esta seguro?`,
+                text: "Esta acción no se puede reversar.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Si'
+            }).then((result) => {
+                if (result.value) {
+                    DeleteEmployee(id);
+
+                    let options = {
+
+                    };
+                    const request = fetch('', options)
+
+                    Swal.fire(
+                        'Eliminado!',
+                        'El empleado ha sido eliminado.',
+                        'success'
+                    )
+                }
+            })
+        }
+
+
+    </script>
+}

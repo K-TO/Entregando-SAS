@@ -1,0 +1,16 @@
+Z:\Periferia\Entregando\Entregando.Data\obj\Debug\Entregando.Data.csproj.CoreCompileInputs.cache
+Z:\Periferia\Entregando\Entregando.Data\bin\Debug\Entregando.Data.dll.config
+Z:\Periferia\Entregando\Entregando.Data\bin\Debug\Entregando.Data.dll
+Z:\Periferia\Entregando\Entregando.Data\bin\Debug\Entregando.Data.pdb
+Z:\Periferia\Entregando\Entregando.Data\bin\Debug\EntityFramework.dll
+Z:\Periferia\Entregando\Entregando.Data\bin\Debug\EntityFramework.SqlServer.dll
+Z:\Periferia\Entregando\Entregando.Data\bin\Debug\EntityFramework.xml
+Z:\Periferia\Entregando\Entregando.Data\bin\Debug\EntityFramework.SqlServer.xml
+Z:\Periferia\Entregando\Entregando.Data\obj\Debug\Entregando.Data.csproj.CopyComplete
+Z:\Periferia\Entregando\Entregando.Data\obj\Debug\Entregando.Data.dll
+Z:\Periferia\Entregando\Entregando.Data\obj\Debug\Entregando.Data.pdb
+Z:\Periferia\Entregando\Entregando.Data\bin\Debug\Entregando.Infraestructure.dll
+Z:\Periferia\Entregando\Entregando.Data\bin\Debug\Entregando.Infraestructure.pdb
+Z:\Periferia\Entregando\Entregando.Data\obj\Debug\Entregando.Data.csprojAssemblyReference.cache
+Z:\Periferia\Entregando\Entregando.Data\bin\Debug\Newtonsoft.Json.dll
+Z:\Periferia\Entregando\Entregando.Data\bin\Debug\Newtonsoft.Json.xml

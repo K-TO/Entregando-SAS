@@ -1,0 +1,85 @@
+﻿@model Entregando.Infraestructure.Domain.Empleado
+
+@{
+    ViewBag.Title = "Detalles";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-12">
+    <h4>Datos del empleado</h4>
+    <hr />
+    <div class="panel panel-info">
+        <div class="panel-body">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Nombres)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Nombres)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Apellidos)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Apellidos)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Celular)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Celular)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Documento)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Documento)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Cargo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Cargo)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.FechaNacimiento)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FechaNacimiento)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.TieneHijos)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TieneHijos)
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Regresar al listado", "Index")
+</p>
